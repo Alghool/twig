@@ -53,6 +53,11 @@ class Twig
      */
     private ?LoaderInterface $loader = null;
 
+	/**
+	 * @string file extension
+	 */
+	private string $extension = "twig";
+
     public function __construct(?TwigConfig $config = null)
     {
         $this->initialize($config);
@@ -75,6 +80,10 @@ class Twig
         if (isset($config->paths)) {
             $this->paths = array_unique(array_merge($this->paths, $config->paths));
         }
+
+	    if (isset($config->extension)) {
+		    $this->extension = $config->extension?? $this->paths;
+	    }
 
         // default Twig config
         $this->config = [
@@ -226,7 +235,7 @@ class Twig
         // after loading CodeIgniter functions in a controller.
         $this->addFunctions();
 
-        $view = $view . '.twig';
+        $view = $view . '.' . $this->extension;
 
         return $this->twig->render($view, $params);
     }
