@@ -47,7 +47,7 @@ Then you can adjust it to your needs. By default file will be present in `app/Co
 
 ```php
 $twig = new \Daycry\Twig\Twig();
-$twig->display( 'file.html', [] );
+$twig->display( 'file', [] );
 
 ```
 
@@ -55,7 +55,7 @@ $twig->display( 'file.html', [] );
 
 ```php
 $twig = \Config\Services::twig();
-$twig->display( 'file.html', [] );
+$twig->display( 'file', [] );
 
 ```
 
@@ -73,7 +73,7 @@ And then you can use the helper
 ```php
 
 $twig = twig_instance();
-$twig->display( 'file.html', [] );
+$twig->display( 'file', [] );
 
 ```
 
