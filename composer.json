@@ -5,12 +5,17 @@
     [
         "codeigniter", "twig", "templates", "codeigniter4", "html"
     ],
-    "homepage": "https://github.com/daycry/twig",
+    "homepage": "https://github.com/Alghool/twig",
     "authors":
     [
         {
             "name": "daycry",
             "homepage": "https://github.com/daycry",
+            "role": "Developer"
+        },
+        {
+            "name": "Alghool",
+            "homepage": "https://github.com/alghool",
             "role": "Developer"
         }
     ],
