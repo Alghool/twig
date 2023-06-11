@@ -17,7 +17,7 @@ Twig uses a syntax similar to the Django and Jinja template languages which insp
 
 Use the package with composer install
 
-	> composer require daycry/twig
+	> composer require Alghool/twig
 
 ## Manual installation
 
