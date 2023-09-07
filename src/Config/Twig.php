@@ -1,6 +1,6 @@
 <?php
 
-namespace Daycry\Twig\Config;
+namespace Alghool\Twig\Config;
 
 use CodeIgniter\Config\BaseConfig;
 

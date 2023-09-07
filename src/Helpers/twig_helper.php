@@ -1,7 +1,7 @@
 <?php
 
-use Daycry\Twig\Config\Services;
-use Daycry\Twig\Twig;
+use Alghool\Twig\Config\Services;
+use Alghool\Twig\Twig;
 
 if (! function_exists('twig_instance')) {
     /**

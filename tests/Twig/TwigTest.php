@@ -2,11 +2,11 @@
 
 namespace Tests\Twig;
 
-use Daycry\Twig\Config\Twig as TwigConfig;
+use Alghool\Twig\Config\Twig as TwigConfig;
 use Twig\Environment;
-use Daycry\Twig\Config\Services;
+use Alghool\Twig\Config\Services;
 use CodeIgniter\Test\CIUnitTestCase;
-use Daycry\Twig\Twig;
+use Alghool\Twig\Twig;
 
 class TwigTest extends CIUnitTestCase
 {

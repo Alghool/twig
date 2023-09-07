@@ -37,7 +37,7 @@
     {
         "psr-4":
         {
-            "Daycry\\Twig\\": "src/"
+            "Alghool\\Twig\\": "src/"
         }
     },
     "autoload-dev":

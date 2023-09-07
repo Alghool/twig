@@ -1,11 +1,11 @@
 <?php
 
-namespace Daycry\Twig\Config;
+namespace Alghool\Twig\Config;
 
 use CodeIgniter\Config\BaseService;
-use Daycry\Twig\Config\Twig as TwigConfig;
+use Alghool\Twig\Config\Twig as TwigConfig;
 
-use Daycry\Twig\Twig;
+use Alghool\Twig\Twig;
 
 class Services extends BaseService
 {

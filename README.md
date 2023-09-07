@@ -21,7 +21,7 @@ Use the package with composer install
 
 ## Manual installation
 
-Download this repo and then enable it by editing **app/Config/Autoload.php** and adding the **Daycry\Twig**
+Download this repo and then enable it by editing **app/Config/Autoload.php** and adding the **Alghool\Twig**
 namespace to the **$psr4** array. For example, if you copied it into **app/ThirdParty**:
 
 ```php
@@ -29,7 +29,7 @@ $psr4 = [
     'Config'      => APPPATH . 'Config',
     APP_NAMESPACE => APPPATH,
     'App'         => APPPATH,
-    'Daycry\Twig' => APPPATH .'ThirdParty/twig/src',
+    'Alghool\Twig' => APPPATH .'ThirdParty/twig/src',
 ];
 ```
 
@@ -46,7 +46,7 @@ Then you can adjust it to your needs. By default file will be present in `app/Co
 ## Usage Loading Library
 
 ```php
-$twig = new \Daycry\Twig\Twig();
+$twig = new \Alghool\Twig\Twig();
 $twig->display( 'file', [] );
 
 ```
@@ -80,10 +80,10 @@ $twig->display( 'file', [] );
 ## Add Globals
 
 ```php
-$twig = new \Daycry\Twig\Twig();
+$twig = new \Alghool\Twig\Twig();
 
 $session = \Config\Services::session();
-$session->set( array( 'name' => 'Daycry' ) );
+$session->set( array( 'name' => 'alghool' ) );
 $twig->addGlobal( 'session', $session );
 $twig->display( 'file.html', [] );
 
@@ -112,7 +112,7 @@ $twig->display( 'file.html', [] );
 ## How Run Tests
 
 ```php
-cd vendor\daycry\twig\
+cd vendor\alghool\twig\
 composer install
 vendor\bin\phpunit
 

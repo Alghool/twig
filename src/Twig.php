@@ -1,9 +1,9 @@
 <?php
 
-namespace Daycry\Twig;
+namespace Alghool\Twig;
 
 use Config\Services;
-use Daycry\Twig\Config\Twig as TwigConfig;
+use Alghool\Twig\Config\Twig as TwigConfig;
 use Twig\Environment;
 use Twig\Extension\DebugExtension;
 use Twig\Loader\FilesystemLoader;
