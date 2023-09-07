@@ -138,6 +138,21 @@ class Twig
         $this->twig->addGlobal($name, $value);
     }
 
+	/**
+	 * Registers a message
+	 *
+	 * @param array $msg  new message to be added
+	 */
+    public function addMsg($msg){
+    	$msgs = [];
+		$globals = $this->twig->getGlobals();
+		if ( array_key_exists('msgs', $globals) ){
+			$msgs = $globals['msgs'];
+		}
+		$msgs[] = $msgs;
+		$this->addGlobal('msgs', $msgs);
+    }
+
     protected function addFunctions()
     {
         // Runs only once
