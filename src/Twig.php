@@ -144,13 +144,14 @@ class Twig
 	 * @param array $msg  new message to be added
 	 */
     public function addMsg($msg){
-    	$msgs = [];
-		$globals = $this->twig->getGlobals();
-		if ( array_key_exists('msgs', $globals) ){
-			$msgs = $globals['msgs'];
-		}
-		$msgs[] = $msgs;
-		$this->addGlobal('msgs', $msgs);
+	    $msgs = [];
+	    $this->createTwig();
+	    $globals = $this->twig->getGlobals();
+	    if ( array_key_exists('msgs', $globals) ){
+		    $msgs = $globals['msgs'];
+	    }
+	    $msgs[] = $msg;
+	    $this->twig->addGlobal('msgs', $msgs);
     }
 
     protected function addFunctions()
